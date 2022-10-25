@@ -1,0 +1,533 @@
+ /* Custom Reset */
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* Custom Styles */
+:root {
+    --primary:rgb(255, 25, 78);
+    --secondary:rgb(206, 232, 245);
+    --tertiary:rgb(33, 57, 106);
+    --forth:rgb(83, 91, 198);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+     line-height: 1.5;
+     font-family: 'Nunito', sans-serif;
+}
+
+ a {
+    text-decoration: none;
+ }
+
+ /* Container */
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	width: 100%;
+    padding: 25px;
+}
+
+/* Flex */
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+.item-center {
+    align-items: center;
+}
+ul {
+	list-style-type: none;
+}
+
+/* column */
+.flex-46 {
+    flex: 0 1 46%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.width-full {
+    width: 100%;
+}
+
+.padding {
+	padding: 114px 0;
+}
+
+/* Header */ 
+
+html {
+    font-size: 16px;
+}
+
+
+.header {
+    position: absolute;
+    padding-top: 20px;
+    top: 0;
+    width: 100%;
+}
+.header .brand {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 900;
+}
+.header .nav {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.nav li {
+    margin-left: 2rem;
+}
+.nav a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+#toggle {
+    display: none;
+}
+.btn {
+    font-size:18px ;
+    font-weight: 700;
+    text-transform: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* Conference */ 
+.conference {
+    background: linear-gradient(rgba(19, 120, 228, 0.7),
+          rgba(19, 120, 228, 0.7)), url("assets/banner.png");
+    background-size: cover;
+    padding-bottom: 20px;
+}
+.conference h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+}
+.conference h2 span {
+    color: var(--primary);
+}
+.conference p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.conference .btn {
+    padding: 15px 25px;
+    margin-left: 0;
+    font-weight: 700;
+}
+
+/* About */
+ .about h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: black;
+ }
+ .about p {
+    font-size: 20px;
+    font-weight: 700;
+    color: grey;
+    margin-bottom: 35px;
+    margin-top: 20px;
+ }
+ .about .btn {
+    margin-left: 0;
+    padding: 15px 25px;
+    font-weight: 700;
+ }
+
+ /* Join */
+ .join {
+    background-color: var(--secondary);
+    padding-top: 70px;
+    padding-bottom: 70px;
+ }
+ .join header{
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-align: center;
+ }
+ .join h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+ }
+ .join p {
+    font-size: 20px;
+    font-weight: 700;
+    color: grey;
+ }
+ .box {
+    border: 3px dashed var(--primary);
+    margin-top: 70px;
+    padding: 30px;
+ }
+
+ /* Schedule */
+ .schedule {
+    padding-bottom: 80px;
+ }
+ .schedule header {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+ }
+ .col-1 {
+    width: 200px;
+    padding-top: 20px;
+ }
+
+ .col{
+    width: 143px;
+    padding-top: 94px;
+ }
+ .date {
+    border: 0;
+    border-radius: 50%;
+    padding: 30px 29px;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 27px;
+    font-weight: 800;
+    text-align: center;
+ }
+ .date-1 {
+    border: 3px dashed var(--primary);
+    border-radius: 50%;
+    padding: 30px 29px;
+    color: var(--primary);
+    font-size: 27px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 59px;
+
+ }
+ .schedule h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 64px;
+ }
+ .schedule .p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: grey;
+ }
+ article {
+    width: 755px;
+    padding-bottom: 20px;
+ }
+ .schedule img {
+    padding-top: 40px;
+    border-radius: 8px;
+ }
+ .schedule .btn {
+     font-size: 1.4rem;
+     font-weight: 700;
+     color: #fff;
+     background-color: var(--primary);
+     padding: 20px 35px;
+     border-radius: 6px;
+     margin-left: 43%;
+ }
+
+/* Sec */
+.sec {
+    background-color: var(--secondary);
+}
+.sec h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: black;
+}
+.sec p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: black;
+}
+.total {
+    background-color: var(--primary);
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+.total h2, .total p {
+    color: #fff;
+}
+.col-1-1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.video {
+    padding: 40px;
+    border-radius: 10px;
+    width: 1300px;
+    margin-left: 112px;
+}
+.video img {
+    border-radius:  12px;
+}
+
+/* News */
+.news {
+    background-color: var(--secondary);
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+.news header {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.news h2{
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: black;
+}
+.news p {
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.news .btn {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration:underline;
+    background-color: var(--secondary);
+    margin-left: 0;
+    padding: 0;
+}
+.news .btn-1 {
+    color: var(--primary);
+}
+.news article {
+    width: 400px;
+}
+/* Footer */
+.footer img {
+    margin-top: 25px;
+}
+footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 20px;
+}
+.footer nav {
+    font-size:1.3rem;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.footer nav .ul li a{
+    margin-left: 20px;
+    color:  rgb(214, 214, 232);
+}
+.footer i {
+    color: rgb(214, 214, 232);
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.footer .footer-1 {
+    background-color: var(--forth);
+    padding: 40px 0;
+}
+.footer .footer-2 {
+    background-color: var(--tertiary);
+    padding: 25px 0;
+}
+.footer .footer-2 small {
+    color: rgb(214, 214, 232);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 36%;
+}
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width:992px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 960px;
+    }
+}
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    html {
+        font-size: 10px;
+    }
+    .padding {
+        padding: 40px 0;
+    }
+    .wrap  {
+        flex-wrap: wrap;
+    }
+    .flex-100 {
+        flex: 0 1 100%;
+        margin: 4rem 0;
+    }
+
+    .header {
+        height: 60px;
+    }
+    .header .brand a {
+        text-align: center;
+        font-size:25px;
+    }
+    .header .btn {
+        margin-left: 0;
+    }
+    .nav {
+        display: none;
+    }
+    .brand {
+        position: fixed;
+        left: 32px;
+        top: 12px;
+        z-index: 99;
+    }
+    .nav li {
+        margin: 16px 0;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .bars {
+        font-size: 24px;
+        color: #fff;
+        position: fixed;
+        right: 32px;
+        top: 12px;
+        z-index: 99;
+    }
+    .nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(33, 57, 106, 0.9);
+        padding-top: 120px;
+        z-index: 9;
+    }
+    .column {
+        flex-direction: column;
+    }
+    .conference p, .about p, .schedule p {
+        font-size: 15px;
+    }
+    .join header, .schedule header ,.news header{
+        font-size: 35px;
+    }
+    .schedule .date , .schedule .date-1{
+        padding: 45px 48px;
+    }
+    .schedule .date-1 {
+        margin-top: 42px;
+    }
+    .schedule .col {
+        padding-top: 20px;
+        display: inline-block;
+    }
+    .schedule .btn {
+        display: inline-block;
+        margin-left: 25px;
+    }
+    .video {
+        width: auto;
+        margin-left: 20px;
+    }
+    .news h2, .news p{
+        margin-top: 10px;
+    }
+    .footer small {
+        margin-left: 20%;
+        display: inline-block;
+    }
+    .footer nav, .footer i{
+        margin-top: 15px;
+    }
+
+}
